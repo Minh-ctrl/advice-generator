@@ -1,9 +1,9 @@
 <script setup>
-import AdviceCard from "../components/AdviceCard.vue";
+import Advice from "../components/Advice.vue";
 </script>
 <template>
   <div class="about">
-    <AdviceCard />
+    <Advice />
   </div>
 </template>
 

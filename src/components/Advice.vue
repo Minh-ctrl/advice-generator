@@ -1,5 +1,6 @@
 <script setup>
-import { ref, reactive } from "vue";
+import { ref } from "vue";
+import Card from "./Card.vue";
 const data = ref(null);
 async function fetchData() {
   const req = await fetch("https://api.adviceslip.com/advice");
@@ -8,10 +9,10 @@ async function fetchData() {
 }
 </script>
 <template>
-  <div class="container">
+  <div class="containerupper">
     <button @click="fetchData">clickme for data</button>
     <div v-if="data">
-      {{ data }}
+      <Card :data="data.slip" />
     </div>
   </div>
 </template>
