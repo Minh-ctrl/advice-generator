@@ -2,8 +2,10 @@
 import Advice from "./components/Advice.vue";
 </script>
 
-<template>
-  <Advice />
+<template class="w-full h-full">
+  <div class="flex flex-row justify-center content-center">
+    <Advice />
+  </div>
 </template>
 
 <style>
